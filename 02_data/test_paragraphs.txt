@@ -1,0 +1,1843 @@
+Chinese Chemical Letters 37 (2026) 112502
+
+Contents lists available at ScienceDirect
+
+Chinese Chemical Letters
+
+journal homepage: www.elsevier.com/locate/cclet
+
+Application of heteroatom-doped carbon in peroxymonosulfate
+
+activation for enhancing Fenton-like performance: Current
+
+development, challenges and prospects
+
+Sai Bai a , Qianyu Pan b , Xiangning Xu c , Minxian Cheng a , Xiaoming Peng b , ∗,J i n Qian a , ∗
+
+a Research & Development Institute in Shenzhen, School of Chemistry and Chemical Engineering, Northwestern Polytechnical University, Xi’an 710072, China
+
+b School of Civil Engineering and Architecture, East China Jiaotong University, Nanchang 330013, China
+
+c The Second Geological Brigade of Sichuan, Chengdu 610081, China
+
+a r t i c l e i n f o
+
+Article history:
+
+Received 22 July 2025
+
+Revised 7 January 2026
+
+Accepted 5 February 2026
+
+Available online 7 February 2026
+
+Keywords:
+
+Carbon-based catalysts
+
+Peroxymonosulfate
+
+Organic pollutants
+
+Heteroatom-doping
+
+Electronic density a b s t r a c t
+
+Emerging contaminants (ECs) present signiﬁcant environmental and health risks due to their widespread
+
+impact. Catalytic Fenton-like reactions using carbon-based catalysts offer a promising and sustainable so-
+
+lution for EC removal. This review synthesizes recent advancements in heteroatom-doped carbon (HDC)
+
+catalysts for peroxymonosulfate (PMS) activation, critically evaluating the merits and limitations of HDC-
+
+mediated Fenton-like reactions. The review explores how doping affects catalyst porosity, electronic prop-
+
+erties, PMS activation eﬃciency, and overall effectiveness in EC removal. Innovative strategies for iden-
+
+tifying key reactive species in HDC/PMS systems are discussed, including the use of chemical probes,
+
+spin-trapping agents, and SETP-based methodologies. Additionally, density functional theory (DFT) is uti-
+
+lized to investigate the electronic structures of ECs and their interactions with reactive oxygen species
+
+(ROS). The practical potential of HDCs in remediating contaminated groundwater and wastewater is also
+
+addressed, alongside a discussion of the challenges and future research directions to enhance their scal-
+
+able applications, offering a roadmap for advancing sustainable environmental remediation technologies.
+
+©2 0 2 6 Published by Elsevier B.V. on behalf of Chinese Chemical Society and Institute of Materia
+
+Medica, Chinese Academy of Medical Sciences.
+
+1. Introduction
+
+A wide range of emerging contaminants (ECs)—including phar-
+
+maceuticals, personal care ingredients, endocrine-active com-
+
+pounds, dyes, and microplastics—are now routinely reported in
+
+natural and engineered waters, drawing increasing scientiﬁc con-
+
+cern [ 1 ]. Owing to their high persistence and propensity for bioac-
+
+cumulation, these pollutants pose substantial risks to both hu-
+
+man health and aquatic ecosystems. Exposure can impair biologi-
+
+cal functions and has been associated with chronic toxic outcomes,
+
+such as carcinogenic, teratogenic, and mutagenic effects. To address
+
+these challenges, advanced oxidation processes (AOPs) have been
+
+intensively explored for wastewater treatment. By in situ gener-
+
+ating highly reactive oxidants, AOPs can transform refractory or-
+
+ganic matter into smaller, less persistent molecules, thereby reduc-
+
+ing overall toxicity [ 2 , 3 ].
+
+AOPs, widely employed for the degradation of ECs, primarily in-
+
+clude Fenton oxidation, peroxymonosulfate (PMS)-based oxidation,
+
+∗Corresponding authors.
+
+E-mail addresses: pengxiaoming70@126.com (X. Peng), qianjin@nwpu.edu.cn (J.
+
+Qian) . and ozonation, each relying on distinct mechanisms for generating
+
+reactive oxygen species (ROS) [ 4–7 ]. Among these, sulfate radical-
+
+based advanced oxidation processes (SR-AOPs) have attracted sub-
+
+stantial interest because of their operational robustness, strong ox-
+
+idative capability, and adaptability over a wide pH window [ 8 ].
+
+PMS-AOPs are especially appealing for wastewater remediation, as
+
+producing sulfate radicals (SO4 •−), hydroxyl radicals (• OH), and sin-
+
+glet oxygen (1 O2 ). PMS with asymmetric molecular structure could
+
+be converted to SO4 •−through homogeneous or heterogeneous
+
+activation [ 9 ]. The redox potential, dissociation energy and O–O
+
+bond length in PMS are 1.82 V, 377 kJ/mol, and 1.460˚A, respec-
+
+tively, which makes it beneﬁcial for oxidizing ECs [ 10 ].
+
+In recent years, carbonaceous materials, have garnered signiﬁ-
+
+cant attention as effective activators of PMS. Owing to the inher-
+
+ent metal-free nature, exceptional stability, tunable physicochem-
+
+ical properties, and large speciﬁc surface area (SSA) [ 11 ]. The in-
+
+corporation of heteroatoms ( e.g. , sulfur (S), boron (B), nitrogen
+
+(N), phosphorus (P)), into the carbon matrix has proven to signif-
+
+icantly enhance the catalytic properties of carbon-based catalysts.
+
+Heteroatom-doping not only overcomes the intrinsic inertness of
+
+pure carbon catalysts but also modulates the electroactive sites
+
+within the carbon framework, thereby improving the chemical sta-
+
+https://doi.org/10.1016/j.cclet.2026.112502
+
+1001-8417/© 2026 Published by Elsevier B.V. on behalf of Chinese Chemical Society and Institute of Materia Medica, Chinese Academy of Medical Scienc es.
+
+S. Bai, Q. Pan, X. Xu et al. Chinese Chemical Letters 37 (2026) 112502
+
+bility and enabling ﬁne control over the catalytic pathways in SR-
+
+AOPs [ 12 ]. The electronegativity, charge density, and size of the
+
+doped heteroatoms play pivotal roles in optimizing catalytic per-
+
+formance. By introducing electron-rich or electron-deﬁcient atoms,
+
+the surface charge distribution of carbon materials can be al-
+
+tered, while the defects created during the doping process serve
+
+as novel active sites, further enhancing the catalytic eﬃciency. No-
+
+tably, compared to metal-based catalysts, heteroatom-doped car-
+
+bon materials offer distinct advantages, including lower cost, su-
+
+perior stability, and minimal environmental impact. These beneﬁts
+
+position heteroatom-doped carbon materials as highly promising
+
+alternatives in the activation of PMS for environmental remedia-
+
+tion applications [ 13 , 14 ].
+
+This review offers an up-to-date summary of the progress in
+
+heteroatom-doped carbon (HDCs) catalysts for the removal of per-
+
+sistent organic pollutants in water, with a speciﬁc emphasis on
+
+PMS activation. HDCs-based catalysts are classiﬁed into single-
+
+doped and multi-doped porous carbon catalysts. This review covers
+
+several key topics, including the effects of heteroatom doping, the
+
+PMS activation mechanism, and the practical application potential
+
+in wastewater treatment. These insights aim to guide the rational
+
+design of eﬃcient metal-free carbonaceous catalysts for EC abate-
+
+ment via PMS activation. Moreover, current limitations and future
+
+directions are highlighted, including the use of machine learning
+
+(ML) to deeply investigate PMS activation mechanism with HDCs-
+
+based catalysts, long-term durability, evaluation of the environ-
+
+mental impact of HDCs in PMS activation process are also dis-
+
+cussed.
+
+2. Effect of heteroatom doping on porous carbons
+
+2.1. Effect of single heteroatom doping
+
+Introducing heteroatoms ( e.g. , N, B, S, and P) into carbon frame-
+
+works is an effective route to tune the reactivity of porous carbon
+
+catalysts. The integrated heteroatoms, with varying atomic radius,
+
+orbitals, electron density and electronegativity, their incorporation
+
+perturbs the local electronic structure of the sp2 carbon lattice and
+
+breaks its intrinsic inertness, thereby generating catalytically active
+
+motifs that can facilitate PMS activation [ 15 ].
+
+2.1.1. Nitrogen doping
+
+Nitrogen doping is widely adopted because its atomic size is
+
+close to that of carbon (0.65˚A for N vs. 0.77˚A for C), enabling high
+
+dopant incorporation, while its higher electronegativity (3.04 for N
+
+vs. 2.55 for C) provides an eﬃcient means to regulate local elec-
+
+tronic structures [ 16 ]. As a representative strategy for metal-free
+
+carbon catalysts, N incorporation can (i) reconﬁgure the electronic
+
+environment of nearby carbon atoms to generate new functionali-
+
+ties and catalytic sites, (ii) activate adjacent sp2 carbon by facilitat-
+
+ing π-electron redistribution, and (iii) enhance charge delocaliza-
+
+tion, thereby alleviating the intrinsic inertness of the carbon lattice
+
+[ 17 ]. In parallel, N dopants markedly reshape the spin density and
+
+charge distribution of surrounding carbon atoms, often accompa-
+
+nied by local bond perturbations and lattice distortion that elevate
+
+chemical reactivity during catalysis [ 18 , 19 ]. N dopants also intro-
+
+duce electron-rich Lewis basic sites in graphitic carbons, enhanc-
+
+ing coordination in redox processes and promoting PMS activation
+
+[ 20 ]. Additionally, N doping enhances both adsorption and PMS ac-
+
+tivation performance, effectively aiding in the removal of antibi-
+
+otics from water [ 21 ].
+
+The speciﬁc nitrogen species responsible for improved catalytic
+
+performance in PMS activation remain unclear. In N/PMS systems,
+
+various nitrogen conﬁgurations, including pyrrolic-, pyridinic-,
+
+amino-, and graphitic-N, have been proposed as potential active
+
+centers. Thus, understanding the role of N-doping in Fenton-like reaction is essential for designing targeted carbon catalysts for
+
+PMS-AOP systems. While graphitic-, pyrrolic-, and pyridinic-N have
+
+been shown to enhance PMS activation, nitrogen oxides are inef-
+
+fective for this process [ 22 ]. Graphitic-N is sp2 -hybridized, bonded
+
+to three sp2 carbon atoms. Theoretical studies show it has the low-
+
+est PMS adsorption energy and highest electron transfer capac-
+
+ity among N dopants [ 23 ]. This superior performance likely stems
+
+from nitrogen’s higher electronegativity, which enables it to mod-
+
+ify the charge distribution of nearby carbon atoms. This adjust-
+
+ment enhances electronic properties and promotes eﬃcient elec-
+
+tron transfer, crucial for catalytic processes [ 24 ]. As a result, the
+
+polarized carbon atoms adjacent to graphitic N interact strongly
+
+with PMS, weakening the O–O linkage and promoting bond cleav-
+
+age [ 12 , 25 ]. Pyrrolic-N is formed by incorporating one nitrogen
+
+atom into a ﬁve-membered heterocyclic ring, while pyridinic-N is
+
+created by integrating sp2 -hybridized nitrogen in a six-membered
+
+ring [ 26 ]. Pyridinic- and pyrrolic-N, possessing lone-pair electrons
+
+similar to those in ketones, function as Lewis-base sites. These sites
+
+can interact with electrophilic species from peroxides, thereby acti-
+
+vating PMS and generating ROS [ 27 ]. Duan et al . employed N-doped
+
+carbon nanotubes (NCNTs) to enhance PMS-driven phenol removal.
+
+Compared to undoped single-walled carbon nanotubes (SWCNTs),
+
+the catalytic eﬃciency of N-doped SWCNTs was enhanced from
+
+56.5 % to 100 %, with k value signiﬁcantly increased from 0.0043
+
+min−1 to 0.2466 min−1 . This improvement is attributed to the re-
+
+duced oxygen content and the introduction of graphitic nitrogen
+
+via high-temperature nitrogen doping, which creates defect sites
+
+and enhances electron transfer from adjacent carbon atoms.
+
+2.1.2. Boron doping
+
+Boron (B) atom has similar atomic radius (0.85˚A vs. 0.77˚A of
+
+carbon) and smaller electronegativity ( χB = 2.04 < χC = 2.55) com-
+
+pared to carbon atom, indicating that it can be easily doped into
+
+the carbon matrix and can serve as acceptor of π-electron [ 28 ].
+
+The introduction of boron into the carbon matrix alters the elec-
+
+tronic structure of the carbon network. Since the boron atom has
+
+only three valence electrons-with two in the 2s orbital and one
+
+in the 2p orbital-it creates electron-deﬁcient sites within the car-
+
+bon lattice. Doping with B atom could activate the π-electrons of
+
+both the B and adjacent C atoms, creating "holes" that facilitate
+
+charge migration, thereby enhancing the electrical conductivity of
+
+HDCs-based catalysts [ 29 ]. Relevant reports indicate that B-doped
+
+carbon enhances PMS activation by facilitating the adsorption of
+
+PMS and interacting with various contaminants, such as bisphenol
+
+A and tetracycline.
+
+Speciﬁcally, the conﬁgurations of B-doping atom in carbon ma-
+
+trix include BC3 and oxidized B (CBO2 and C2 BO), these structures
+
+endow the catalysts with PMS activation property. The BC3 moiety
+
+forms when B atom replaces a C atom in the sp2 carbon structure,
+
+which is considered as the optimal bonding conﬁguration for en-
+
+hancing the catalytic capacity of carbon materials. Additionally, the
+
+CBO2 and C2 BO moieties facilitate PMS activation via the nonrad-
+
+ical pathway, with1 O2 serving as dominant active species gener-
+
+ated during reaction. Moreover, the BCO2 and BC2 O motifs are pro-
+
+posed as catalytically active sites that facilitate PMS activation by
+
+strengthening the interfacial interaction between PMS and boron-
+
+doped ordered mesoporous carbon (B-OMC) [ 30 ].
+
+2.1.3. Sulfur doping
+
+Sulfur (S), with an electronegativity of 2.58 (compared to C of
+
+2.55) and a greater atomic size (1.04˚A vs. 0.77˚A for C), has gar-
+
+nered signiﬁcant attention in recent years for its role in PMS ac-
+
+tivation and pollutant degradation [ 31 , 32 ]. Experimental and the-
+
+oretical results show that S-doping conﬁgurations in the carbon
+
+matrix are thiophene S and oxidized S, which depend on pyroly-
+
+sis temperature and synthesis methods. Higher pyrolysis tempera-
+
+2
+
+S. Bai, Q. Pan, X. Xu et al. Chinese Chemical Letters 37 (2026) 112502
+
+tures promote the conversion of oxidized S to thiophene S, though
+
+excessively high temperatures can reduce sulfur content due to C-S
+
+bond cleavage [ 33 ].
+
+Thiophene S refers to S atoms bonded to aromatic rings in
+
+the sp2 -C system, acting as key catalytic sites in the S-doping
+
+carbon catalysts/PMS system. The electron-rich thiophene S, as a
+
+Lewis basic site, can activate PMS via radical pathway, generat-
+
+ing• OH and SO4 • - [ 34 ]. In the non-radical pathway, thiophene
+
+sulfur boosts charge density of adjacent carbon atoms, generates
+
+defects, and promotes charge delocalization, enhancing electron
+
+transfer and activating sp2 -hybridized carbon for PMS activation
+
+[ 35 ]. Conversely, oxidized S, with electron-withdrawing properties,
+
+inhibits acidic organic adsorption and limits electron transfer, re-
+
+ducing PMS activation eﬃciency [ 36 ]. S atoms, particularly in the
+
+thiophene conﬁguration, enhance electron density and facilitate
+
+electron transfer, crucial for PMS activation. However, S atoms may
+
+leach from the carbon matrix during PMS activation, especially in
+
+acidic environments, potentially introducing secondary pollutants
+
+into the treated water [ 37 ]. XPS analysis of sulfur before and af-
+
+ter the reaction was conducted to investigate sulfur leaching dur-
+
+ing PMS activation. Further analysis of the S 2p high-resolution
+
+spectra reveals a decrease in the thiophene-S (C-S-C) content at
+
+163.9 eV and 165.0 eV, along with an increase in sulfur oxides at
+
+168.1 eV. This transformation suggests that sulfur leaching occurs
+
+during PMS activation, which may weaken the catalytic activity of
+
+the material. As reported by Liu et al ., who reported sulfur leach-
+
+ing and the conversion of sulfur-containing species during activa-
+
+tion, which in turn affected the catalytic performance [ 38 ]. These
+
+ﬁndings underscore the role of sulfur leaching and the transforma-
+
+tion of sulfur species in determining the eﬃciency of subsequent
+
+activation cycles.
+
+2.1.4. Phosphorus doping
+
+Compared to C atom, P atom has lower electronegativity
+
+(2.19 vs. 2.55 of C) and larger atomic radius (1.00˚A vs. 0.77˚A of C).
+
+As a result, P incorporation typically behaves as an n-type elec-
+
+tron donor within conjugated carbon frameworks; however, it dif-
+
+fers fundamentally from N doping because its valence electrons
+
+reside in the third shell [ 39 ]. The introduction of P into the car-
+
+bon skeleton facilitates charge delocalization, disrupts electron dis-
+
+tribution, and generates more defective sites within the structure
+
+[ 40 ]. Moreover, P doping can enhance the oxidation resistance of
+
+the carbon network by introducing negative charges to adjacent C
+
+atoms, thereby forming electron clouds. This electron density re-
+
+distribution improves the stability of the carbon structure, protect-
+
+ing it from oxidative environments. This effect has been widely re-
+
+ported in the literature, where phosphorus doping has been shown
+
+to strengthen the carbon matrix’s resistance to oxidation by mod-
+
+ulating the electronic properties of the carbon framework [ 41 , 42 ].
+
+Furthermore, the adsorption ability of HDCs-based catalysts for dif-
+
+ferent pollutants is notably enhanced by the formation of π- πin-
+
+teractions and hydrogen bonds [ 43 ].
+
+2.2. Effect of heteroatom co-doping
+
+Single heteroatom doping introduces unique characteristics to
+
+carbon materials, optimizing their structure for speciﬁc applica-
+
+tions in PMS-based catalysis. In co-doped carbon catalysts, the si-
+
+multaneous incorporation of boron, nitrogen, and sulfur creates no-
+
+table asymmetry, which signiﬁcantly inﬂuences the charge distri-
+
+bution and density within the carbon framework [ 44–46 ]. Con-
+
+sequently, the interaction of different heteroatoms can create a
+
+synergistic effect, improving the overall performance of co-doped
+
+metal-free carbonaceous catalysts.
+
+Fig. 1. (a) Structural conﬁgurations and (b) Raman spectra of N,S-co-doping carbon
+
+materials. Reprinted with permission [ 47 ]. Copyright 2019, Elsevier. (c) EPR spec-
+
+tra in N,S-co-doping/PMS system ( ♥ : DMPO-• OH, ♦ : DMPO-SO 4 •−). (d) Optimized
+
+N,S-co-doping model graphene. Electrostatic potential mapping from charge density
+
+matrix for (e) undoped model graphene, (f) S-N-G and (g) S-S-N-G conﬁgurations.
+
+Reprinted with permission [ 44 ]. Copyright 2015, Wiley-VCH.
+
+2.2.1. Nitrogen and sulfur co-doping
+
+N and S co-doping is one of the most extensively studied strate-
+
+gies for modifying carbon materials. In N,S co-doped catalysts, the
+
+nitrogen atom has greater electronegativity compared to carbon,
+
+while the sulfur atom possesses larger, more polarizable valence
+
+orbitals. The incorporation of both N and S into the carbon lat-
+
+tice substantially modiﬁes the physical and chemical properties of
+
+the carbon-based catalysts. Various conﬁgurations of N,S-co-doping
+
+are illustrated in Fig. 1a . Sun et al . synthesized heteroatom-doped
+
+graphene oxide using a thermal decomposition method and as-
+
+sessed the structural disorder by evaluating the ID / IG ratio based
+
+on Raman spectroscopy ( Fig. 1b ) [ 47 ]. Heteroatom-doping could
+
+signiﬁcantly enhance the degree of defect with the co-doping with
+
+N and S (i-rGO–NS) showed the highest, higher than single N-
+
+doped rGO and pristine rGO, indicating the co-doping of i-rGO
+
+with N, S could introduce defects into carbon substrate and thus
+
+may have a certain impact on catalytic properties. Recently, Duan
+
+et al . have tried to use diphenyl disulﬁde and ammonium nitrate
+
+to introduce S and N to reduced graphene oxide (rGO), obtain-
+
+ing S,N-rGO [ 44 ]. The co-doped S, N-rGO also showed a signiﬁ-
+
+cant enhancement in catalytic-degradation performance of phenol
+
+by PMS activation through radical pathways involving the gener-
+
+ation of SO4 •−and• OH ( Fig. 1c ). Electrostatic potential mapping
+
+(ESP) reveals that N,S-doping charges adjacent carbon atoms pos-
+
+itively, creating active sites for HSO5 −adsorption and O–O bond
+
+cleavage ( Figs. 1d –g ).
+
+Co-doping substitutional S with graphitic N increases charge
+
+and improves PMS adsorption performance [ 48 ]. Duan et al .
+
+showed that thiophene S and graphitic N interactions regulate the
+
+charge and spin density of neighboring carbon atoms [ 49 ]. How-
+
+ever, pyrrolic or pyridinic N and S co-doping reduces porosity due
+
+to pore blockage, as noted by Shi et al . [ 50 ]. Graphitic-N promotes
+
+electron ﬂow and adjusts the electron density of adjacent carbon
+
+atoms, while electron-rich thiophene-S increases the asymmetric
+
+spin charge density of nearby carbon atoms. As a result, the syn-
+
+ergistic effect of N and S signiﬁcantly enhances the cleavage of
+
+the O–O bond in PMS, with singlet oxygen (1 O2 ) playing a dom-
+
+inant role in the degradation of bisphenol A (BPA). This synergy
+
+achieves a BPA removal eﬃciency of 98.4 % within 60 min. Similar
+
+non-radical pathway dominated system was further conducted by
+
+3
+
+S. Bai, Q. Pan, X. Xu et al. Chinese Chemical Letters 37 (2026) 112502
+
+Fig. 2. (a) Raman spectra of N,B-doped CNTs. Reprinted with permission [ 51 ]. Copyright 2018, Elsevier. Visual structure of (b) B-N-C–C and (c) B-B-C–N bond conﬁgurations.
+
+(d, e) Simulated STM images; Reprinted with permission [ 53 ]. Copyright 2016, American Chemical Society. (f) Structure diagrams and charge density differences of bilayer
+
+graphene (BLG) incorporated with varying N and B atoms. Reprinted with permission [ 54 ]. Copyright 2019, Elsevier.
+
+Li et al . with introducing the S atom to nitrogen-doped graphene
+
+(S,N-G) [ 45 ].
+
+2.2.2. Nitrogen and boron co-doping
+
+B atoms have fewer valence electrons than that of N atoms,
+
+which inﬂuences the bonding behavior and electronic properties,
+
+especially after incorporating into carbon-based structures. Sedel-
+
+nikova et al . have prepared the N,B-doped carbon nanotubes (CNTs)
+
+by evaporation of solid graphite rod in various atmosphere with
+
+arc-discharge processing. N,B-doped CNTs samples are always en-
+
+riched with short CNTs and polyhedral nanoparticles, suggesting
+
+that the incorporation of N and B into graphite electrode results
+
+in disordering of graphitic structure. Raman spectra ( Fig. 2a ) could
+
+be further conﬁrmed the conclusion above due to the improved
+
+ID / IG of N,B-doped CNTs, indicating the enriched defects and func-
+
+tionalities with N,B-doping. Moreover, for the N,B-doped samples, a
+
+signiﬁcant upshift of D band (1358 cm−1 ) and G band (1577 cm−1 ),
+
+which are more probably attributed to the holes doping during the
+
+synthesis process [ 51 ].
+
+Introducing N and B simultaneously into carbon frameworks
+
+can markedly perturb the local electronic structure, often gen-
+
+erating electron-deﬁcient domains that are beneﬁcial for catal-
+
+ysis while also improving thermal robustness [ 52 ]. In such co-
+
+doped lattices, B incorporation reinforces the sp ²carbon network,
+
+whereas N, owing to its higher electronegativity, withdraws elec-
+
+tron density and can redistribute charge toward neighboring B sites
+
+through the conjugated carbon bridge. As a result, adjacent B–N
+
+pairs are energetically favored (stabilized by ∼2.35 eV), whereas B–
+
+B and N–N pairings are comparatively unfavorable. Schiros et al .
+
+directly resolved these B–N bonding motifs in monolayer graphene
+
+by combining synchrotron X-ray characterization, scanning tunnel-
+
+ing microscopy (STM), and DFT calculations, revealing distinct lo-
+
+cal conﬁgurations and corresponding changes in the local den-
+
+sity of states [ 53 ]. As depicted in Figs. 2b and c , multiple local
+
+bonding motifs ( e.g. , B–N–C–C and N–B–C–N) were identiﬁed, and
+
+STM images further corroborated the atomic-scale arrangements of
+
+these co-dopant complexes ( Figs. 2d and e ). In parallel, the spec-
+
+troscopic/STM analysis indicated pronounced dopant-induced per-
+
+turbations in the local density of states arising from the incorpo-
+
+rated heteroatoms. The concentration of N and B atoms during synthesis inﬂu-
+
+ences the structural and electronic properties. Raﬁque et al . found
+
+that B and N doping in bilayer graphene (BLG) increases the in-
+
+terlayer distance from 3.32˚A to 3.4˚A. Higher B concentrations
+
+shorten C–C bonds and elongate B-C bonds (1.46–1.48 ˚A), while
+
+more N atoms lengthen C–C bonds and shorten N–C bonds ( Fig.
+
+2f ). The charge density difference (CCD) increases with higher dop-
+
+ing, with N atoms donating electrons (n-type) and B atoms at-
+
+tracting electrons (p-type), affecting the charge transfer between
+
+BLG layers [ 54 ]. N and B co-doping synergistically enhances PMS
+
+activation by improving electron transfer, reducing PMS adsorp-
+
+tion energy, and prolonging O–O bond cleavage, promoting free
+
+radical generation. Chen et al . synthesized N and B co-doped
+
+graphene oxide (GO) for PMS activation in sulfacetamide degrada-
+
+tion, with tunable doping levels and N-B conﬁgurations through
+
+annealing [ 46 ].
+
+2.2.3. Nitrogen and phosphorus co-doping
+
+Similar to N atoms, P atoms with ﬁve valence electrons can
+
+donate electrons, altering the electron distribution of the sub-
+
+strate. Owing to its lower electronegativity and larger atomic size,
+
+P acts as a stronger electron donor in conjugated carbon struc-
+
+tures [ 55 ]. P-incorporation creates more defect sites in the car-
+
+bon lattice, which can strengthen π–πinteractions between aro-
+
+matic molecules and graphitic domains, ultimately beneﬁting cat-
+
+alytic performance [ 56 ]. Xin et al . developed N/P co-doped or-
+
+dered mesoporous carbon (NPMC) using a sol-gel method. Com-
+
+pared to N-doped (NMC), P-doped (PMC), and undoped (OMC)
+
+carbon, NPMC exhibited a higher ID / IG ratio, indicating increased
+
+disorder and defects in the carbon framework ( Fig. 3a ) [ 57 ]. The
+
+numerous structural defects in NPMCs generate additional active
+
+sites, boosting electrochemical performance. Qiao et al . investigated
+
+the electrocatalytic activity of P,N-co-doped reduced graphene ox-
+
+ide (PN-rGO), which exhibited the superior current density at
+
+−0.96 mA/cm2 ( Fig. 3b ). This value was approximately four times
+
+higher than that of GCE. LSV curves ( Fig. 3c ) further demonstrated
+
+the more positive potential of P/N co-doped graphene oxide [ 58 ].
+
+Attributing to the electron-donating properties of N and P, co-
+
+doping may exhibit unexpected tunes on the electronic density
+
+of carbon substrate. As shown in the electrostatic potential plots
+
+(ESP, Figs. 3d –f ), N atoms (blue color) of N-doped graphene (NG)
+
+4
+
+S. Bai, Q. Pan, X. Xu et al. Chinese Chemical Letters 37 (2026) 112502
+
+Fig. 3. (a) Raman spectra of N,P-doped mesoporous carbon materials. Reprinted with permission [ 57 ]. Copyright 2020, Elsevier. (b) CV and (c) LSV curves for N,P-doped GO.
+
+ESP mappings for (d) N-doped graphene, (e) P-doped graphene, and (f) N,P co-doped graphene, with C, H, O, N, and P atoms colored in gray, white, red, blue, and orange,
+
+respectively. (g) PDOS for N-doped GO and N,P co-doped GO models. Reprinted with permission [ 59 ]. Copyright 2020, Elsevier.
+
+were positively charged, while P atoms (red color) were nega-
+
+tively charged in P-doped graphene (PG). Compared to NG and PG,
+
+the electrostatic potential of N,P-doping graphene (N,P-G) shows a
+
+large negative value around P atoms (red regions) and a positive
+
+potential around N atoms (blue regions). This suggests that N,P co-
+
+doping increases the potential difference in graphene, enhancing
+
+electron transfer performance [ 57 ]. To further investigate the elec-
+
+tronic enhancement induced by P atom. Chen et al . performed par-
+
+tial density of state (PDOS) calculations on N-doped graphene ox-
+
+ide (GO) and N,P-co-doped GO ( Fig. 3g ). Their results showed that
+
+the states near the Fermi level of pyridine N are split in N,P-co-
+
+doped GO than that of N-doped GO. This splitting, induced by P
+
+atoms signiﬁcantly increases the reactivity of pyridine N, leading
+
+to stronger adsorption towards PMS or other target pollutants [ 59 ].
+
+Fu and colleagues further demonstrated that P/N co-doped carbon
+
+sheets are highly eﬃcient for TC degradation through the adsorp-
+
+tion and activation of PMS, with P played an vital role in regulating
+
+the electronic structure [ 60 ].
+
+3. Activation mechanism of heteroatom-doped porous carbon
+
+materials
+
+Identifying various ROS and other reactive species is essential
+
+for optimizing the PMS activation process [ 61 ]. This section sum-
+
+marizes the experiments and characterization techniques for un-
+
+derstanding the mechanisms of HDCs in SR-AOPs. The radical path-
+
+way involves PMS activation and pollutant degradation via SO4 •−,
+
+• OH and O2 •−at active sites. The non-radical pathway includes sin-
+
+glet oxygen (1 O2 ) produced by surface functional groups, and sur- face electron transfer, where the catalyst mediates electron ﬂow
+
+between pollutants and PMS or facilitates direct oxidation via re-
+
+active species [ 62 ].
+
+3.1. Identiﬁcation of the working ROS
+
+3.1.1. Chemical quenching and quantiﬁcation
+
+Selecting appropriate quenchers for the target system is cru-
+
+cial for identifying ROS (Table S1 in Supporting information) [ 63 ].
+
+To assess the effectiveness of the selected scavenger, a competi-
+
+tion kinetic rate coeﬃcient ( f ) was proposed and utilized by Ren et
+
+al . (Text S1 in Supporting information) [ 64 ]. The quencher nearly
+
+eliminates the target ROS when the theoretical f value is < 0.01.
+
+PMS-AOPs/HDCs always appeared through a synergistic mecha-
+
+nism, which consisting of radical species (• OH, SO4 •−, O2 •−) and
+
+non-radical species (1 O2 dominated) ( Fig. 4a ) [ 65 ]. Hence, isolated
+
+quenching experiments alone are not suﬃcient to effectively in-
+
+vestigate the reactive species presented in the system. Take the
+
+1 O2 quenching for example, most1 O2 scavengers including furfuryl
+
+alcohol (FFA) and l -histidine ( l -His) may react directly with the
+
+PMS,• OH and SO4 •−at the high concentration, which may further
+
+overestimating the contribution of1 O2 in the certain system [ 66 ].
+
+Therefore, additional strategies are employed to further inves-
+
+tigate the role of various reactive species. For example, by solv-
+
+ing kinetic equations, the concentration of speciﬁc reactive species
+
+can be inferred. Using reported rate constants for these species, the
+
+concentrations of• OH, SO4 •−and1 O2 can be determined (Text S2
+
+in Supporting information). Furthermore, the contribution of vari-
+
+ous ROSs could be also employed to evaluate the catalytic perfor-
+
+5
+
+S. Bai, Q. Pan, X. Xu et al. Chinese Chemical Letters 37 (2026) 112502
+
+Fig. 4. (a) Removal of styrene in the presence of various quenchers. EPR spectra of (b) DMPO-• OH/SO 4 •−and (c) TEMP-1 O2 . Reprinted with permission [ 65 ]. Copyright
+
+2022, American Chemical Society. (d) EPR spectra of DMPO-PMS and TEMP-PMS. Reprinted with permission [ 70 ]. Copyright 2017, Elsevier. (e) In-situ Raman spectra of PMS
+
+activation process. (f) LSV, (g) EIS, and (h) OCP of heteroatom-doped porous carbon materials. Reprinted with permission [ 15 ]. Copyright 2020, American Chemical Society.
+
+mance based on the second-order constant between organic pol-
+
+lutants and ROSs (Text S3 in Supporting information). As summa-
+
+rized in Table S2, molecular electrostatic potential (MEP) surfaces
+
+were obtained from DFT calculations at the B3LYP/6–311 + G∗level.
+
+The blue regions present positive molecular electrostatic poten-
+
+tial, the red regions corresponding to the negatively charged po-
+
+tential, and the white regions denote neutrally charged regions.
+
+Reactive radicals and non-radical oxidants can engage pollutants
+
+through different transformation routes, and the prevailing path-
+
+way is largely dictated by the contaminant’s molecular structure.
+
+In radical systems, both SO4 •−and• OH typically oxidize organ-
+
+ics through hydrogen abstraction, electron-transfer steps, and ad-
+
+dition reactions to unsaturated moieties. However, the structure of
+
+the pollutants plays a critical role in determining which mecha-
+
+nism dominates. For example, when SO4 •−reacts with aliphatic
+
+carboxylic compounds, the ﬁrst step involves electron abstraction
+
+from the oxygen atom in the carboxyl group to SO4 •−itself. This
+
+structural characteristic facilitates the electron transfer process. On
+
+the other hand,• OH tends to abstract H atoms from the α-position
+
+of aliphatic chains, underscoring that both molecular architecture
+
+and functional-group location strongly govern radical reactivity.
+
+The nonradical species1 O2 , in particular, demonstrates a highly
+
+selective electrophilic addition mechanism. The reaction pathway
+
+of1 O2 depends heavily on the structural features of the target
+
+molecule. For an isolated double bond,1 O2 reacts via cycloaddi-
+
+tion. However, allylic hydroperoxides generated via double bonds
+
+linked to polar hydrogen-containing functional groups. For pollu-
+
+tants containing conjugated dienes,1 O2 engages in the Diels-Alder
+
+reaction to form endoperoxides. Except for quenching experiments, several commonly-used
+
+chemical probes, such as 9,10-diphenylanthracene (DPA) and 9,10-
+
+anthracenediyl-bis(methylene)dimalonic acid (ABDA) are utilized
+
+to quantify the1 O2 , which exhibit characteristic peak wave-
+
+lengths at 378 nm and 400 nm, respectively [ 67 ]. ABDA has been
+
+suggested as a semi-quantitative indicator of1 O2 in PMS-AOP
+
+systems [ 68 ].
+
+Upon reacting with1 O2 , it forms an endoperoxide (ABDA–O 2 )
+
+that can be separated by liquid chromatography and conﬁrmed
+
+by high-resolution mass spectrometry. In addition, singlet oxygen
+
+sensor green (SOSG)—a commercial anthracene/ﬂuorescein-based
+
+probe—has been widely used to detect1 O2 in aqueous media and
+
+biological samples, producing a ﬂuorescence signal at ∼525 nm af-
+
+ter trapping1 O2 ; its applicability in PMS-driven systems has also
+
+been demonstrated by Shao et al . [ 69 ].
+
+3.1.2. Characterization techniques of ROS
+
+Electron paramagnetic resonance (EPR), has been conducted
+
+to investigate the ROS via employing particular trapping agents
+
+( Figs. 4b –d ) [ 65 , 70 ]. Currently, 5,5-dimethyl-1-pyrroline N -oxide
+
+(DMPO) is widely selected as the• OH, SO4 •−trapping agent, with
+
+a seven-peaks demonstrating the presence of DMPO transforma-
+
+tion product, further conﬁrming the co-exist of• OH and SO4 •−[ 71 ].
+
+DMPO dissolved in• OH and SO4 •−scavengers e.g. , dimethyl sulfox-
+
+ide (DMSO), methanol (MeOH) and ethanol (EtOH) could further
+
+serve as the trapping agent for O2 •−, which appears in the form
+
+of six-characteristic peak signal (DMPO–O2 • –signal) [ 72 ]. 2,2,6,6-
+
+Tetramethylpiperidin (TEMP) serves as the spin agent for1 O2 , with
+
+the characteristic triplet peaks of TEMP-1 O2 [ 73 ].
+
+6
+
+S. Bai, Q. Pan, X. Xu et al. Chinese Chemical Letters 37 (2026) 112502
+
+Additionally, in-situ Raman spectroscopy serves as effective
+
+techniques for real-time tracking the formation and transforma-
+
+tion of ROS and other PMS intermediates, providing insights into
+
+the PMS activation mechanism [ 74 ]. As shown in Fig. 4e , the pris-
+
+tine O–O bond of PMS (887 cm−1 ) showed a blue-shifted vibra-
+
+tion peak at 879 cm−1 in PMS∗(HO–OSO3 −), attributing to the
+
+strong interaction between PMS∗and catalysts (CNT-B, N–CNT-B).
+
+Additionally, a stronger peak was observed in N–CNT-B/PMS sys-
+
+tem than that in CNT-B/PMS system, indicating that heteroatom-
+
+doping could regulate the electronic structure, thereby enhancing
+
+PMS activation. With phenol (PE) addition, the peaks of PMS and
+
+PMS∗disappeared, leaving only the peak of SO4 2−(979 cm−1 ), fur-
+
+ther indicating the decomposition of PMS [ 15 ].
+
+3.2. Identiﬁcation of the surface electron transfer process (SETP)
+
+3.2.1. Chemical quenching of SETP
+
+Apart from the ROS, electrons could be transferred directly
+
+from the pollutants to the HDCs, leading to PMS activation. Recent
+
+studies conducted two typical mechanisms about surface electron
+
+transfer process (SETP) in SR-AOPs/HDCs systems: (1) Pollutants
+
+transfer electrons to HDCs, which then pass them to PMS (employ-
+
+ing catalysts as the carbon bridge, pollutants as electron donor, and
+
+PMS as the electron acceptor); (2) Direct contact between PMS and
+
+HDCs forms active complexes (HDCs-PMS∗) via SETP, which inter-
+
+act with pollutants to facilitate oxidation or reduction [ 75 ].
+
+Owing to the improved electronic performance of carbonaceous
+
+catalysts with diverse heteroatom bond conﬁgurations introduced,
+
+SETP also plays an equally vital role in the SR-AOPs system [ 76 ].
+
+More speciﬁcally, SETP can be divided into two types: inner-sphere
+
+and outer-sphere, depending on the interaction between the reac-
+
+tants and the substrate (HDCs) [ 77 ]. In inner-sphere interactions,
+
+reactants are strongly adsorbed on the surface of HDCs, forming di-
+
+rect chemical bonds. In contrast, outer-sphere interactions involve
+
+weaker adsorption, primarily governed by electrostatic forces [ 78 ].
+
+Based on this, it is easier to distinguish the inner or outer sphere
+
+interactions by ion interference experiments during PMS or organic
+
+pollutants [ 79 ]. Perchlorate (ClO4 −), as a typical high ionic strength
+
+solution, embraces less impact on PMS or organic pollutants ad-
+
+sorption through inner-sphere interactions. Contrarily, outer-sphere
+
+interactions are more sensitive to variations in ionic strength due
+
+to the changes in surface charge of the catalyst [ 64 ].
+
+3.2.2. Characterization techniques for SETP
+
+Online electrochemical analysis can offer direct evidence to
+
+verify the SETP mechanism in SR-AOP/HDCs systems by apply-
+
+ing a catalyst-Naﬁon mixture onto the glassy carbon electrode
+
+(GCE). Typical electrochemical methods could be utilized to vali-
+
+date the SETP in SR-AOPs/HDCs systems, e.g. , linear sweep voltam-
+
+metry (LSV), cyclic voltammetry (CV), electrochemical impedance
+
+spectroscopy (EIS), open circuit potential (OCP), and galvanic ox-
+
+idation process (GOP) [ 64 , 80 ]. LSV is used to study SETP in SR-
+
+AOP/HDCs systems. The adsorption of excess reactants (PMS or
+
+organic pollutants) on the catalyst surface affects charge trans-
+
+fer resistance ( Rct ) and open circuit potential, distorting current
+
+signals. The NGC800/PMS/BPA system demonstrated signiﬁcantly
+
+enhanced real-time current generation with increasing potential,
+
+outperforming the NGC800 system. Additionally, the N-doped car-
+
+bon nanotube exhibited a similarly high current response com-
+
+pared to CNT, further demonstrating the improved electron con-
+
+ductivity due to heteroatom doping in porous carbon materials
+
+( Fig. 4f ) [ 15 ]. CV curves are also extensively used to access elec-
+
+trochemical reversibility. Qi et al . tested the CV curves of pristine
+
+activated carbon (AC-850) and S-doped activated carbons (ACS-
+
+850), showing that heteroatom-doping process signiﬁcantly en-
+
+hanced both oxidation and reduction capabilities, resulting in an
+
+Fig. 5. (a) Schematic illustration of galvanic oxidation process (GOP). (b) OCP mea-
+
+surement and SMX degradation in the GOP reaction systems. Reprinted with per-
+
+mission [ 82 ]. Copyright 2023, Elsevier.
+
+improved oxidation potential ( ∼0.85 eV) and reduction potential
+
+( ∼0.52 eV) during the SETP process [ 81 ]. Incorporating N dopants
+
+into carbon-based materials could facilitate the interfacial reactions
+
+due to the lower impedance in charge-migration process with de-
+
+creasing radius of N–CNT-B1 ( Rct = 63.98 /Omega1) compared with CNT-
+
+B ( Rct = 100.08 /Omega1) ( Fig. 4g ). Similarly, OCP can be used to mon-
+
+itor the real-time charge transfer during PMS activation and or-
+
+ganic pollutant degradation on the HDCs electrode surface, without
+
+the need for an external potential. As shown in Fig. 4h , the cata-
+
+lyst potential increased rapidly upon the introduction of PMS, then
+
+gradually plateaued, indicating the stabilization of the catalyst-PMS
+
+complexes. The N–CNT catalyst outperformed the CNT, indicating
+
+that PMS could be activated through the SETP mechanism [ 15 ].
+
+A two-compartment galvanic oxidation setup (GOP) has recently
+
+been introduced, in which PMS and the target pollutant are placed
+
+in separate chambers, while the real-time open-circuit potential
+
+and current responses are continuously recorded ( Fig. 5a ) [ 82 ]. A
+
+large increase in OCP value was conducted upon PMS addition and
+
+reached maximum quickly, indicating the eﬃcient electron transfer
+
+from PMS to catalysts. Subsequently, a sharp decrease when pol-
+
+lutants (SMX) was added simultaneously. Similarly, enhancement
+
+of OCP value in single-chamber system indicated the similar SETP
+
+( Fig. 5b ). Moreover, the contribution of SETP on SMX degradation
+
+could be conﬁrmed as showed inset of Fig. 5b [ 82 ].
+
+3.3. Theoretical calculations
+
+DFT calculations offer an eﬃcient way to study PMS activation
+
+at the molecular level, focusing on PMS active sites and activa-
+
+tion pathways. Generally, PMS adsorption energy ( Eads ), O–O bond
+
+length ( IO –O ) of activated PMS (PMS∗), Gibbs free energy (reaction
+
+barrier, /triangle G ), electron transfer tendency ( Q ), and charge density dif-
+
+ference (CDD) between PMS and HDCs [ 83 ]. Dung et al . carried
+
+out DFT calculations to provide further insights into the PMS ad-
+
+sorption on HDCs, demonstrating the S-doping is more favorable
+
+for PMS adsorption than N-doping, with N,S-co-doping exhibits
+
+stronger adsorption ( Fig. 6a ) [ 84 ].
+
+However, the lower Eads does not necessarily correlate with
+
+higher catalytic performance. And thus, the formation of more ROS
+
+conﬁrmed by the enlarger O–O length could be the main reason
+
+for PMS activation. Gibbs free energy consists two main stages:
+
+(1) dissociation process ( Edis ); (2) desorption process ( Edes ). The
+
+dissociation process could evaluate the generation of SO4 • - ∗, with
+
+the more negative Edis value, the more spontaneously the dissoci-
+
+ation process occurs. Additionally, the desorption process of SO4 •−
+
+to generate free SO4 •−, is another important step for PMS activa-
+
+tion [ 85 ]. For example, in a study by Li et al . [ 23 ], nitrogen-doped
+
+carbon materials were investigated for their role in PMS activation.
+
+DFT calculations showed that nitrogen doping lowers the Gibbs
+
+free energy of the PMS activation step by stabilizing the transition
+
+state and facilitating electron transfer between the PMS molecule
+
+and the carbon surface. Speciﬁcally, nitrogen atoms, with their
+
+7
+
+S. Bai, Q. Pan, X. Xu et al. Chinese Chemical Letters 37 (2026) 112502
+
+Fig. 6. (a) Adsorption energies of PMS on various biochar derived from durian
+
+peel (BCD) models. Charge density difference for (b) pristine BCD, (c) pyrrolic N-
+
+doped BCD, (d) pyridinic N-doped BCD, (e) graphitic N-doped BCD, (f) S-doped BCD,
+
+(g) N site of graphitic N,S-doped BCD, and (h) S site of graphitic N,S-doped BCD.
+
+Reprinted with permission [ 84 ]. Copyright 2024, Elsevier.
+
+electron-donating properties, modify the electronic structure of the
+
+carbon surface, making it more reactive towards PMS. The presence
+
+of nitrogen not only lowers the activation energy for sulfate radi-
+
+cal (SO4 •−) generation but also shifts the reaction pathway to fa-
+
+vor radical generation, as compared to undoped carbon materials.
+
+Electron transfer charge ( Q ) and charge density difference (CDD)
+
+could visually and directly illustrate the distribution and pathway
+
+of charge transfer, further unveiling the interfacial interactions be-
+
+tween PMS and HDCs. As shown in Figs. 6b –h , more electrons are
+
+transferred from N site of graphitic N,S-BCD or S site of graphitic
+
+N,S-BCD to PMS (0.88 or 1.24 e) than pristine BCD (0.66 e), which
+
+are consistent with the more electron depletion (yellow region in
+
+the CDD image) on the surface of N site of graphitic N,S-BCD or S
+
+site of graphitic N,S-BCD [ 84 , 86 ]
+
+4. Environmental applications of HDCs/PMS systems
+
+Natural wastewater contains various types of detergents, surfac-
+
+tants, inorganic salts, dyes, and other substances with complex or-
+
+ganic structures, all of which can be harmful to the ecological envi-
+
+ronment. Inorganic ions could exert an impact on pollutants degra-
+
+dation via buffering solution pH, capturing reactive oxygen species
+
+and neutralizing electrostatic bonds between reactants. Each kind
+
+of anion has its own unique physical and chemical properties, so
+
+inorganic anions exhibit obvious inﬂuence on the removal of pol-
+
+lutants. In addition, natural organic matter and humic acids also
+
+have adverse effects on AOPs.
+
+4.1. Inﬂuence of inorganic ions
+
+Coexisting anions in natural waters and wastewaters, even at
+
+trace levels, can markedly inﬂuence PMS activation—particularly
+
+for radical-mediated routes. Common inorganic species ( e.g. , Cl−,
+
+NO3 −, SO4 2−, CO3 2−/HCO3 −, Hx PO4 (x-3) ( x = 0, 1, 2)) differentially
+
+impact the Fenton-like performance in the HDCs-catalyzed systems
+
+(Text S4 in Supporting information).
+
+Cl−is the main anion in natural water, and the impact of Cl−
+
+on contaminant degradation depends on the ROS types, their reac-
+
+tion rates with Cl−, and the speciﬁc activation pathways in the sys-
+
+tem. At low levels, Cl−can intercept SO4 • - to form Cl• and HOCl•−[ 87 ] with the consumption of SO4 •−and decreasing the oxidation
+
+capacity of the PMS-based reaction system [ 88 ]. However, HSO5 −
+
+has the ability to oxidize high-level Cl−, and the hypochlorous
+
+acid (HOC) produced during the reaction possesses strong oxida-
+
+tive properties, which aids in the pollutant’s removal. When PMS
+
+activation is dominated by non-radical pathways, the overall im-
+
+pact of Cl−is often much less pronounced and can become negli-
+
+gible [ 89 ]. NO3 −showed an inhibitory effect on ECs removal. Low
+
+concentration of NO3 −could slightly inhibited the degradation of
+
+organic pollutants due to the consumption of SO4 •−and• OH by
+
+NO3 −, while excess NO3 −could adversely enhance the degrada-
+
+tion performance of organic pollutants, attributing to the genera-
+
+tion of NO3 •−. On the other hand, the sulfate anion (SO4 2−) showed
+
+improved organic degradation performance, attributed to the eﬃ-
+
+cient generation of SO4 •−due to the increased decomposition rate
+
+of PMS. Additionally, the presence of a high dosage of SO4 2−inhib-
+
+ited the transfer of SO4 •−to ·OH, further enhancing the degrada-
+
+tion process [ 90 ].
+
+More strikingly, CO3 2−, HCO3 −, and Hx PO4 (x-3) typically have
+
+double-effects on the degradation of organic contaminants. Specif-
+
+ically, at the low concentration level, dominated SO4 •−and• OH
+
+could be quenched and generated CO3 •−, HCO3 •−, and Hx-1 PO4 • (x-3) ,
+
+which inhibited the oxidation process of organic pollutants [ 91 ].
+
+However, a signiﬁcant amount of alkaline anions can alter the pH
+
+of the system to an alkaline condition, promoting the conversion
+
+of HSO5 −to SO5 2−and increasing the production of1 O2 [ 92 ].
+
+4.2. Inﬂuence of natural organic matter (NOM)
+
+In addition to inorganic anions, natural organic matter is per-
+
+vasive across diverse water matrices, including municipal wastew-
+
+ater, groundwater, and surface waters [ 93 ]. The composition of or-
+
+ganic compounds in real water matrices is complex, which makes
+
+the impact of organic matter on the PMS-AOP system uncertain.
+
+To date, studies have explored the dual effects of organic compo-
+
+nents on the degradation of emerging contaminants. NOM could
+
+compete with target organic pollutants for active species. Addition-
+
+ally, free quinone radicals derived from organic phenols, quinones,
+
+and hydroquinone can further activate PMS to generate SO4 •−. As
+
+is known to all, humic acid (HA), a dominant fraction of natu-
+
+ral organic matter, has been reported to inhibit HDC/PMS pro-
+
+cesses, which is commonly attributed to its abundant carboxyl and
+
+phenolic hydroxyl functionalities. Degle et al . has proved that the
+
+co-existence of HA could suppress sulfacetamide degradation in
+
+the SO4 •−-dominated nitrogen-doped graphene/PMS system [ 94 ].
+
+In systems governed by non-radical pathways ( i.e. , with minimal
+
+involvement of ROS), this inhibitory effect is substantially attenu-
+
+ated [ 95 ].
+
+5. Conclusions and perspectives
+
+This article provides an overview of the development of HDCs-
+
+based catalysts for PMS activation in pollutant removal. HDCs-
+
+based catalysts are considered a new generation of environmen-
+
+tally friendly catalysts, owing to their excellent adsorption capac-
+
+ity, tunable coordination environment, metal-free nature, and their
+
+ability to prevent secondary pollution caused by metal leaching
+
+during the PMS activation process. However, several key issues still
+
+need to be addressed:
+
+(1) Research on speciﬁc HDC-based catalysts with uniform ac-
+
+tive sites, defects, porosity, and other characteristics related
+
+to PMS activation mechanisms is ongoing. The design and
+
+synthesis of HDC-based catalysts often rely on trial and er-
+
+ror, a process that is time-consuming and costly. To address
+
+this, automated machine learning (ML) techniques have been
+
+8
+
+S. Bai, Q. Pan, X. Xu et al. Chinese Chemical Letters 37 (2026) 112502
+
+employed to develop catalyst models and better understand
+
+the PMS activation process. However, the application of ML
+
+for modeling HDC-based catalyst structures in PMS activa-
+
+tion for organic pollutant removal remains limited. Future
+
+research is needed to provide alternative approaches for
+
+modeling the reactivity of HDC-based catalysts, focusing on
+
+the relationship between structural descriptors and reactiv-
+
+ity properties.
+
+(2) Deep investigation of surface activation mechanisms should
+
+be conducted. At present, the recognized reaction mecha-
+
+nisms encompass radical pathways driven by SO4 •−, which
+
+leads to the generation of• OH, non-radical pathways trig-
+
+gered by1 O2 , and direct degradation through the surface
+
+electron transfer process (SETP). However, the activation
+
+mechanism that includes surface-bound complexes of PMS
+
+and catalysts has not been investigated yet. The generation
+
+of1 O2 during PMS activation remains uncertain, and fur-
+
+ther research is necessary to pinpoint reliable active sites.
+
+Although both radical and non-radical pathways may be
+
+present in various systems, usually one pathway dominates.
+
+Understanding the reasons for this dominance and its dy-
+
+namic interaction with HDCs-based catalysts or speciﬁc con-
+
+taminants warrants further study.
+
+(3) Greater emphasis should be placed on feasibility analysis of
+
+practical applications. The long-term durability and reusabil-
+
+ity of HDC-based catalysts are essential for their practical
+
+application. Over time, several factors contribute to the de-
+
+cline in catalytic performance. A key issue is the gradual
+
+loss of catalytic activity, primarily due to the depletion of
+
+surface-active sites. Additionally, intermediate degradation
+
+products can accumulate on the catalyst surface, obstructing
+
+active sites and clogging the porous structure, which in turn
+
+diminishes the catalyst’s effectiveness. Furthermore, the ad-
+
+sorption of PMS or organic pollutants onto the catalyst sur-
+
+face can trigger surface oxidation reactions, reduce the avail-
+
+ability of active sites and decrease the speciﬁc surface area
+
+of the catalyst. While heat treatment and other regeneration
+
+techniques can remove some of these blocking products and
+
+partially restore active sites, these methods may not fully
+
+address the long-term demands for stable catalytic perfor-
+
+mance. To improve the durability and reusability of HDC-
+
+based catalysts, further research is needed to develop more
+
+effective strategies.
+
+(4) Assessing the environmental impacts of deploying HDC-
+
+based catalysts for PMS activation. At present, the environ-
+
+mental impact of using HDCs-based catalysts in full-scale
+
+systems is not well understood. To address this, compre-
+
+hensive life-cycle assessment (LCA) is needed to quantify
+
+the overall footprint of these catalysts and to systemati-
+
+cally appraise their potential environmental impacts, includ-
+
+ing their behavior during use, disposal, and possible degra-
+
+dation. Long-term ecological effects should be evaluated via
+
+a comprehensive analysis. And thus, more researches should
+
+be focused to ﬁll this knowledge gap by assessing the en-
+
+vironmental risks associated with HDCs-based catalysts/PMS
+
+systems, ultimately helping to minimize their environmental
+
+impact and ensuring their safe and sustainable application
+
+in large-scale systems
+
+CRediT authorship contribution statement
+
+Sai Bai: Writing –r e v i e w & editing, Writing – original draft,
+
+Formal analysis, Conceptualization. Qianyu Pan: Formal analysis.
+
+Xiangning Xu: Resources. Minxian Cheng: Software, Formal anal-
+
+ysis. Xiaoming Peng: Supervision. Jin Qian: Visualization, Supervi-
+
+sion, Project administration. Declaration of competing interest
+
+The authors declare that they have no known competing ﬁnan-
+
+cial interests or personal relationships that could have appeared to
+
+inﬂuence the work reported in this paper.
+
+Acknowledgments
+
+This work was ﬁnancially supported by the National Nat-
+
+ural Science Foundation of China (No. 52470088 ), Natural
+
+Science Foundation of Sichuan Province (No. 25NSFSC0854 ),
+
+Guangdong Basic and Applied Basic Research Foundation (No.
+
+2024A1515030032), and Natural Science Foundation of Shenzhen
+
+(No. JCYJ20220530161806014 ).
+
+Supplementary materials
+
+Supplementary material associated with this article can be
+
+found, in the online version, at doi:10.1016/j.cclet.2026.112502 .
+
+References
+
+[1] X. Chen, W.D. Oh, T.T. Lim, Chem. Eng. J. 354 (2018) 941–976 .
+
+[2] M. Priyadarshini, I. Das, M.M. Ghangrekar, L. Blaney, J. Environ. Manage. 316
+
+(2022) 115295 .
+
+[3] X. Lei, H. Zhao, C. Bai, et al., Chin. Chem. Lett. 36 (2025) 111550 .
+
+[4] D. Yu, M. Wu, Q. Hu, et al., J. Hazard. Mater. 367 (2019) 456–464 .
+
+[5] L. Qin, Z. Wang, Y. Fu, et al., J. Hazard. Mater. 414 (2021) 125448 .
+
+[6] C. Lai, F. Xu, M. Zhang, et al., J.Colloid Interf. Sci. 588 (2021) 283–294 .
+
+[7] F. Qin, Y. Peng, G. Song, et al., J. Hazard. Mater. 398 (2020) 122816 .
+
+[8] R. Huang, J. Yang, Y. Cao, et al., Sep. Purif. Technol. 291 (2022) 120963 .
+
+[9] S. Wacławek, H.V. Lutze, K. Grübel, et al., Chem. Eng. J. 330 (2017) 44–62 .
+
+[10] Q. Tian, J. Chang, X. Peng, et al., Angew. Chem. Int. Ed. 64 (2025) e202503995 .
+
+[11] X. Zhou, Z. Zeng, G. Zeng, et al., Chem. Eng. J. 383 (2020) 123091 .
+
+[12] Y. Zhang, S. Liu, D. Chen, X. Xu, Chin. Chem. Lett. 35 (2024) 108666 .
+
+[13] Q. Tian, B. Yu, Z. Li, et al., Chin. Chem. Lett. 36 (2025) 110322 .
+
+[14] Y. Wang, X. Duan, Y. Xie, et al., ACS Catal. 10 (2020) 13383–13414 .
+
+[15] W. Ren, G. Nie, P. Zhou, et al., Environ. Sci. Technol. 54 (2020) 6438–6447 .
+
+[16] G. Wang, S. Chen, X. Quan, et al., Carbon 115 (2017) 730–739 .
+
+[17] D. Li, X. Duan, H. Sun, et al., Carbon 115 (2017) 649–658 .
+
+[18] I.Y. Jeon, H.J. Noh, J.B. Baek, Chem. Asian J. 15 (2020) 2282–2293 .
+
+[19] W.J. Lee, J. Lim, S.O. Kim, Small Methods 1 (2017) 160 0 014 .
+
+[20] D. Guo, R. Shibuya, C. Akiba, et al., Science 351 (2016) 361–365 .
+
+[21] J. Kang, X. Duan, L. Zhou, et al., Chem. Eng. J. 288 (2016) 399–405 .
+
+[22] X. Huang, F. Li, X. Zhang, et al., Sep. Purif. Technol. 354 (2025) 129003 .
+
+[23] W. Li, C. Nie, X. Wang, et al., Sep. Purif. Technol. 323 (2023) 124418 .
+
+[24] X. Duan, Z. Ao, H. Sun, et al., ACS Appl. Mater. Interfaces 7 (2015) 4169–4178 .
+
+[25] Y. Gao, T. Li, Y. Zhu, et al., J. Hazard. Mater. 393 (2020) 121280 .
+
+[26] Z. Sun, L. Zhao, C. Liu, et al., Environ. Sci. Technol. 53 (2019) 10342–10351 .
+
+[27] L. Xu, C. Wu, P. Liu, et al., Chem. Eng. J. 387 (2020) 124065 .
+
+[28] J. Liu, T. Liang, R. Tu, et al., Appl. Surf. Sci. 481 (2019) 344–352 .
+
+[29] K. Fujisawa, T. Hayashi, M. Endo, et al., Nanoscale 10 (2018) 12723–12733 .
+
+[30] Y. Wang, M. Liu, X. Zhao, et al., Carbon 135 (2018) 238–247 .
+
+[31] S. She, Y. Wang, R. Chen, et al., Chemosphere 266 (2021) 128929 .
+
+[32] D. Yang, L. Zhao, X. Feng, et al., Funct. Mater. Lett. 14 (2021) 2151019 .
+
+[33] Z. Yang, Z. Yao, G. Li, et al., ACS Nano 6 (2012) 205–211 .
+
+[34] M. Huang, X. Wang, C. Liu, et al., J. Environ. Chem. Eng. 9 (2021) 106536 .
+
+[35] Y. Guo, Z. Zeng, Y. Zhu, et al., Appl. Catal. B: Environ. 220 (2018) 635–644 .
+
+[36] Y. Guo, Z. Zeng, Y. Li, et al., Catal. Today 307 (2018) 12–19 .
+
+[37] X. Mo, D.E. López, K. Suwannakarn, et al., J. Catal. 254 (2008) 332–338 .
+
+[38] S. Liu, C. Lai, B. Li, et al., Chem. Eng. J. 384 (2020) 123304 .
+
+[39] E. Cruz-Silva, D.A. Cullen, L. Gu, et al., ACS Nano 2 (2008) 4 41–4 48 .
+
+[40] I.O. Maciel, J. Campos-Delgado, E. Cruz-Silva, et al., Nano Lett. 9 (2009)
+
+2267–2272 .
+
+[41] K. Zhang, X. Min, T. Zhang, et al., J. Hazard. Mater. 413 (2021) 125294 .
+
+[42] X. Liang, Y. Zhao, B. Liu, et al., Sep. Purif. Technol. 340 (2024) 126739 .
+
+[43] T. Wang, L. Xue, L. Zheng, et al., J. Hazard. Mater. 416 (2021) 126126 .
+
+[44] X. Duan, K. O’Donnell, H. Sun, et al., Small 11 (2015) 3036–3044 .
+
+[45] X. Li, J. Wang, X. Duan, et al., ACS Catal. 11 (2021) 4 84 8–4 861 .
+
+[46] X. Chen, X. Duan, W.D. Oh, et al., Appl. Catal. B: Environ. 253 (2019) 419–432 .
+
+[47] P. Sun, H. Liu, M. Feng, et al., Appl. Catal. B: Environ. 251 (2019) 335–345 .
+
+[48] H.R. Ghenaatian, M. Shakourian-Fard, G. Kamath, J. Mater. Sci. 54 (2019)
+
+13175–13189 .
+
+[49] X. Duan, K. O’Donnell, H. Sun, et al., Small 11 (2015) 3036–3044 .
+
+[50] J. Shi, N. Yan, H. Cui, et al., ACS Sustainable Chem. Eng. 7 (2019) 19513–19521 .
+
+[51] O.V. Sedelnikova, Y.V. Fedoseeva, A.I. Romanenko, et al., Carbon 143 (2019)
+
+660–668 .
+
+[52] Y. Zhao, L. Yang, S. Chen, et al., J. Am. Chem. Soc. 135 (2013) 1201–1204 .
+
+[53] T. Schiros, D. Nordlund, L. Palova, et al., ACS Nano 10 (2016) 6574–6584 .
+
+[54] M. Raﬁque, Y. Shuai, I. Ahmed, et al., Appl. Surf. Sci. 480 (2019) 463–471 .
+
+9
+
+S. Bai, Q. Pan, X. Xu et al. Chinese Chemical Letters 37 (2026) 112502
+
+[55] S. Some, J. Kim, K. Lee, et al., Adv. Mater. 24 (2012) 5481–5486 .
+
+[56] Y. Zhang, K. Cui, X. Liu, et al., Sep. Purif. Technol. 359 (2025) 130545 .
+
+[57] X. Xin, H. Kang, J. Feng, et al., Chem. Eng. J. 393 (2020) 124710 .
+
+[58] X. Qiao, S. Liao, C. You, R. Chen, Catalysts 5 (2015) 981–991 .
+
+[59] S. Chen, T. Liu, S.O. Olanrele, et al., J. Energy Chem. 54 (2021) 143–150 .
+
+[60] C. Fu, G. Sun, G. Yin, et al., Sep. Purif. Technol. 292 (2022) 120922 .
+
+[61] J. Yang, D. Zeng, Q. Zhang, et al., Appl. Catal. B: Environ. 279 (2020) 119363 .
+
+[62] E.T. Yun, J.H. Lee, J. Kim, et al., Environ. Sci. Technol. 52 (2018) 7032–7042 .
+
+[63] Y. Lei, Y. Yu, X. Lei, et al., Environ. Sci. Technol. 57 (2023) 5433–54 4 4 .
+
+[64] W. Ren, C. Cheng, P. Shao, et al., Environ. Sci. Technol. 56 (2022) 78–97 .
+
+[65] J. Wu, J. Wang, C. Liu, et al., Environ. Sci. Technol. 56 (2022) 13996–14007 .
+
+[66] Z.H. Xie, C.S. He, H.Y. Zhou, et al., Environ. Sci. Technol. 56 (2022) 8784–8795 .
+
+[67] Y. Gao, T. Wu, C. Yang, et al., Angew. Chem. Int. Ed. 60 (2021) 22513–22521 .
+
+[68] Y.J. Zhang, J.J. Chen, H.-Q. Yu, Chem. Eng. J. 446 (2022) 137237 .
+
+[69] P. Shao, Y. Jing, X. Duan, et al., Environ. Sci. Technol. 55 (2021) 16078–16087 .
+
+[70] R. Yin, W. Guo, H. Wang, et al., Chem. Eng. J. 334 (2018) 2539–2546 .
+
+[71] Y. Yang, G. Banerjee, G.W. Brudvig, et al., Environ. Sci. Technol. 52 (2018)
+
+5911–5919 .
+
+[72] D. Yu, J. He, T. Xie, et al., J. Hazard. Mater. 442 (2023) 130085 .
+
+[73] P. Yang, Y. Long, W. Huang, D. Liu, Appl. Catal. B: Environ. 324 (2023) 122245 .
+
+[74] B. Li, H.Y. Xu, G.H.N. Chi, et al., Chem. Eng. J. 483 (2024) 149403 .
+
+[75] Y.J. Zhang, G.X. Huang, L.R. Winter, et al., Nat. Commun. 13 (2022) 3005 . [76] M. Kohantorabi, G. Moussavi, S. Giannakis, Chem. Eng. J. 411 (2021) 127957 .
+
+[77] S. Tian, Y. Xu, Y. Ma, et al., Chem. Eng. J. 485 (2024) 150016 .
+
+[78] P. Duan, M. Li, X. Xu, et al., Appl. Catal. B: Environ. 344 (2024) 123619 .
+
+[79] T. Zhang, Y. Chen, Y. Wang, et al., Environ. Sci. Technol. 48 (2014) 5868–5875 .
+
+[80] Y. Chen, H. Kang, M. Cheng, et al., Adv. Funct. Mater. 34 (2024) 2309223 .
+
+[81] F. Qi, Z. Zeng, Q. Wen, Z. Huang, J. Hazard. Mater. 416 (2021) 125810 .
+
+[82] J. Miao, Y. Zhu, Y. Wei, et al., J. Hazard. Mater. 465 (2024) 133344 .
+
+[83] C. Chu, J. Yang, X. Zhou, et al., Environ. Sci. Technol. 55 (2021) 1242–1250 .
+
+[84] N.T. Dung, V.D. Thao, N.P. Thao, et al., Chem. Eng. J. 483 (2024) 149099 .
+
+[85] J. Qi, X. Yang, P.Y. Pan, et al., Environ. Sci. Technol. 56 (2022) 5200–5212 .
+
+[86] N.T. Dung, T.C. Khiem, N.P. Thao, et al., Chemosphere 361 (2024) 142452 .
+
+[87] H. Xue, S. Gao, M. Li, et al., Environ. Res. 188 (2020) 109804 .
+
+[88] W. Peng, Y. Fu, L. Wang, et al., Chin. Chem. Lett. 32 (2021) 2544–2550 .
+
+[89] C. Zhao, B. Shao, M. Yan, et al., Chem. Eng. J. 416 (2021) 128829 .
+
+[90] Y. Yang, G. Banerjee, G.W. Brudvig, et al., Environ. Sci. Technol. 52 (2018)
+
+5911–5919 .
+
+[91] S. Xiao, M. Cheng, H. Zhong, et al., Chem. Eng. J. 384 (2020) 123265 .
+
+[92] Y.H. Guan, J. Ma, Y.M. Ren, et al., Water Res. 47 (2013) 5431–5438 .
+
+[93] Y. Wang, Y. Deng, L. Yao, X. Yang, Water Res. 248 (2024) 120880 .
+
+[94] V.L. Dagle, G. Collinge, M. Rahman, et al., Appl. Catal. B: Environ. 331 (2023)
+
+122707 .
+
+[95] J. Lee, U. von Gunten, J.-H. Kim, Environ. Sci. Technol. 54 (2020) 3064–3081 .
+
+10
