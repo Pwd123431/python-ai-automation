@@ -32,3 +32,6 @@ with open('./02_data/test.json', 'r', encoding='utf-8') as f:
 print('从文件中读取数据：',load_dict)
 print('文件类型是：',type(load_dict))
 
+
+
+
