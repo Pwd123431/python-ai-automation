@@ -3,7 +3,7 @@ import time,json,requests
 #让 AI 拥有记忆（多轮对话）
 
 api_url="https://api.deepseek.com/chat/completions"
-api_key="sk-c7ffe0af2a9048fcb3930a8e1e622750"
+api_key="sk-"
 
 headers={
     "Content-Type":"application/json",

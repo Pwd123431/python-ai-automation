@@ -4,7 +4,7 @@ import requests,json,time
 api_url = "https://api.deepseek.com/chat/completions"
 
 #2.填写api密钥
-api_key="sk-c7ffe0af2a9048fcb3930a8e1e622750"
+api_key="sk-"
 
 # 3. 设置 Headers（告诉服务器：我要发 JSON 数据，这是我的钥匙）
 headers = {
