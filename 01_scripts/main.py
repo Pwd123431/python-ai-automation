@@ -5,7 +5,7 @@ app = FastAPI()
 
 # 把之前的 API Key 和地址写在这
 api_url = "https://api.deepseek.com/chat/completions"
-api_key = "sk-c7ffe0af2a9048fcb3930a8e1e622750"
+api_key = "sk-"
 
 # 1. 这里用 @app.post，因为我们要给 AI 发送数据
 @app.post("/chat")
