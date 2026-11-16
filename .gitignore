@@ -5,8 +5,4 @@ __pycache__/
 *.xlsx
 *.zip
 backup/
-04_saves/.venv/
-__pycache__/
-*.json
-*.csv
-.env
+04_saves
