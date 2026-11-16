@@ -2,7 +2,7 @@ import requests
 import json
 
 api_url = "https://api.deepseek.com/chat/completions"
-api_key = "sk-c7ffe0af2a9048fcb3930a8e1e622750" # 换成你的
+api_key = "sk-" # 换成你的
 
 headers = {
     "Content-Type": "application/json",
