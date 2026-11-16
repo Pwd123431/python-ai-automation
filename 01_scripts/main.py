@@ -3,35 +3,33 @@ import sqlite3
 
 app = FastAPI()
 
-# 把之前的 API Key 和地址写在这
-api_url = "https://api.deepseek.com/chat/completions"
-api_key = "sk-c7ffe0af2a9048fcb3930a8e1e622750"
-
-# 1. 这里用 @app.post，因为我们要给 AI 发送数据
-@app.post("/chat")
-def chat_with_ai(user_message: str):
-    # 组装请求头
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {api_key}"
+@app.get("/all_docs")
+def get_all_documents():
+    # 1. 连接数据库
+    # ⚠️ 注意路径：因为我们在 01_scripts 里运行，数据库在 02_data 里，所以要退一级
+    conn = sqlite3.connect("../02_data/ai_project.db")
+    conn.row_factory = sqlite3.Row # 这是一个小魔法，让查出来的数据可以直接转成字典
+    
+    cursor = conn.cursor()
+    
+    # 2. 查询所有数据
+    cursor.execute("SELECT * FROM documents")
+    rows = cursor.fetchall()
+    
+    # 3. 把数据库里的数据整理成干净的列表
+    result = []
+    for row in rows:
+        result.append({
+            "id": row["id"],
+            "title": row["title"],
+            "keywords": row["keywords"]
+        })
+        
+    conn.close()
+    
+    # 4. 返回 JSON 数据
+    return {
+        "status": "success", 
+        "count": len(result),
+        "data": result
     }
-    
-    # 组装请求体（注意，我们直接把网页传进来的 user_message 放进去）
-    payload = {
-        "model": "deepseek-chat",
-        "messages": [
-            {"role": "system", "content": "你是一个AI助手。"},
-            {"role": "user", "content": user_message}
-        ]
-    }
-    
-    # 发送请求给 DeepSeek
-    res = requests.post(api_url, headers=headers, json=payload)
-    
-    if res.status_code == 200:
-        result = res.json()
-        ai_answer = result["choices"][0]["message"]["content"]
-        # 把 AI 的回答打包成字典返回给网页
-        return {"reply": ai_answer}
-    else:
-        return {"error": "AI 呼叫失败"}
