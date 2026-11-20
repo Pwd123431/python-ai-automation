@@ -237,13 +237,43 @@
 - **明日计划**：
   开启 RAG（检索增强生成）的探索，尝试让 AI 通过“语义搜索”来回答特定段落的问题。
 
-  ## 日期：2026-11-16（第十七天：第一阶段终极通关！）
+  ## 日期：2026-11-16（第十七天：批量文件处理、AI 提取摘要与 Excel 自动化报表）
+
 - **今天学了**：
-  1. 将 FastAPI 与 SQLite 数据库结合。
-  2. 编写了 `/all_docs` 接口：通过 `sqlite3` 连接数据库，使用 `SELECT` 查出数据，并利用 FastAPI 自动转成 JSON 格式返回给浏览器。
-  3. 解决了前端 Swagger UI (`/docs`) 因网络问题一直转圈的误解，掌握了直接通过浏览器测试后端接口的方法。
-- **写出的文件**：`01_scripts/main.py`（带数据库查询的完整 API）。
-- **里程碑**：
-  **第一阶段（Month 1）6 大目标已全部达成！** 正式具备开发真实 Web AI 应用的基础能力。
-- **明日/下一阶段计划**：
-  开启 RAG（检索增强生成）探索，学习文本切分（Chunking）与向量数据库基础。
+  1. **批量文件处理**：使用 `os.listdir()` 遍历文件夹，提取所有的 `.pdf` 文件，实现从“单发步枪”到“加特林机枪”的自动化升级。
+  2. **AI 长文本生成**：通过优化 Prompt，并要求 AI 返回 `max_tokens: 2000`，成功让 AI 根据 PDF 前两页内容生成了 400 字左右的高质量中文摘要。
+  3. **数据库高级操作**：
+     - 给表结构加上了 `filename TEXT UNIQUE` 约束，学会了在插入前做去重判断（`SELECT id FROM documents WHERE filename = ?`），防止重复消耗 API 额度。
+     - 彻底搞懂了不能用 `INSERT` 去覆盖已有数据，必须用 `UPDATE`。
+  4. **Excel 数据导出与精美排版**：
+     - 使用 `openpyxl` 将 SQLite 数据库里的数据导出为 `.xlsx` 表格。
+     - 掌握了利用 `enumerate` 配合公式 `row = 2 + i * 2` 实现**隔行留白**。
+     - 学会了设置列宽（`column_dimensions`）以及开启自动换行（`Alignment(wrap_text=True)`），让长篇摘要完美展示，不再挤成一团。
+
+- **写出的文件**：`day18_1_batch_pdf.py`（批量处理核心）, `day18_2_pxecel.py`（数据导出与排版）, `ai_project_v2.db`（40篇论文数据库）, `论文汇总_终极版.xlsx`。
+
+- **遇到的报错与思考（血泪教训）**：
+  1. **数据库表结构冲突**：旧表没有 `filename` 列，且 SQLite 不支持直接加带 `UNIQUE` 约束的列。解决：直接新建一个 `v2.db` 新库，绕过历史包袱。
+  2. **`",".join()` 处理字符串的灾难**：对一个长字符串用了 join 方法，导致 400 字的摘要变成了 `'E,m,e,r,g,i,n,g...'` 这种字母分裂的惨状。明白了 `join` 只能用于列表。
+  3. **Excel 导出元组报错**：`ValueError: Cannot convert tuple to Excel`。明白了 `enumerate` 返回的是 `(行号, 数据元组)`，在 for 循环里需要用多重拆包 `for excel_row, (id, name...) in ...` 来取值。
+  4. **DeepSeek API 报错 400**：发现使用 `json_object` 格式时，Prompt 文本中必须包含 "json" 这个词。
+
+- **🏆 高光时刻**：
+  成功跑通了 40 篇 PDF 的批量 ETL 全流程！并利用 VS Code 的 `SQLite Viewer` 插件直观查看了数据库，随后将数据导成了排版优雅、隔行留白的 Excel 报表，实现了真正的“企业级办公自动化”。
+
+- **明日计划**：
+  正式跨入 AI 工程师的高阶领域：RAG（检索增强生成）。学习文本切分（Chunking）与向量数据库基础。
+
+  ## 日期：2026-11-20（第十九天：RAG 核心实战 - 迷你 ChatGPT）
+- **今天学了**：
+  1. **文本切分（Chunking）**：掌握了 `chunk_size`（块大小）与 `overlap`（重叠度）的原理，通过重叠保证了语义的连贯性。
+  2. **向量化（Embedding）**：理解了将文本变成高维数字（向量）的核心逻辑，明白了“语义相似度”的数学意义。
+  3. **真实向量化 API**：接入了 Jina AI 的免费 Embedding 接口，学会了批量（Batch）请求以提高效率。
+  4. **余弦相似度（Cosine Similarity）**：掌握了数学计算逻辑，找出了与用户问题最相近的文本块。
+  5. **【终极实战】**：手搓了一个“迷你 ChatGPT”系统。将 40 篇论文切分、向量化后，成功实现了跨文档的语义搜索与 AI 精准问答。
+- **写出的文件**：`day19_1_chunking.py`, `day19_3_project.py`（RAG 问答核心）。
+- **遇到的报错/踩坑**：
+  1. `min(5, len(reader.pages))`：误用 `min` 导致 `'int' object is not iterable`，明白了取最小值的正确语法。
+  2. 向量化太慢：单条请求导致 2400 个块处理极慢。学会了使用 API 的**批量请求（Batch）**，并缩小 `chunk_size` 或减少页数来优化性能。
+- **🏆 里程碑达成**：
+  完整走通了 RAG 的全流程（Load -> Split -> Embed -> Retrieve -> Generate），具备了开发企业级 AI 文档问答机器人的能力！

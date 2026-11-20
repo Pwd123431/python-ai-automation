@@ -13,7 +13,7 @@ print("pdf读取成功，长度：",len(pdf_text))
 
 
 api_url = "https://api.deepseek.com/chat/completions"
-api_key = "sk-"
+api_key = "sk-fde4e297a9064baab0292addeeb9404c"
 
 header={
     "Content-Type":"application/json",
